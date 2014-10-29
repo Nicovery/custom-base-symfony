@@ -31,3 +31,4 @@ Furthermore, this installation comes with :
    * Jquery placeholder https://github.com/mathiasbynens/jquery-placeholder
    * Bxslider http://bxslider.com/
    * Magnific Popup http://dimsemenov.com/plugins/magnific-popup/
+   * GruntJS watch for livereload https://github.com/gruntjs/grunt-contrib-watch#optionslivereload
