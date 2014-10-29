@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/nico-custom-symfony/app/AppKernel.php</file>
+            <file>file:/var/www/nico-custom-symfony/src/App/UserBundle/Entity/User.php</file>
+            <file>file:/var/www/nico-custom-symfony/app/config/security.yml</file>
+            <file>file:/var/www/nico-custom-symfony/app/config/config.yml</file>
+            <file>file:/var/www/nico-custom-symfony/app/config/routing.yml</file>
+            <file>file:/var/www/nico-custom-symfony/src/App/UserBundle/AppUserBundle.php</file>
+            <file>file:/var/www/nico-custom-symfony/src/App/FrontBundle/Controller/FrontController.php</file>
+            <file>file:/var/www/nico-custom-symfony/src/App/FrontBundle/Resources/views/Default/front.html.twig</file>
+            <file>file:/var/www/nico-custom-symfony/web/app_dev.php</file>
+            <file>file:/var/www/nico-custom-symfony/web/app.php</file>
+            <file>file:/var/www/nico-custom-symfony/app/console</file>
+            <file>file:/var/www/nico-custom-symfony/composer.json</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Template website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        {# include 'css/jquery.bxslider.css' when bxslider is needed       #}
+        {# include 'css/magnific.popup.css' when you need another lightbox instead of the bootstrap one      #}
+        {% stylesheets 
+            'css/bootstrap.css' 
+            'css/jquery.bxslider.css'
+            filter='cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
+        {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            {{ knp_menu_render('AppFrontBundle:Builder:mainMenu', { 'style': 'tabs' }) }}
+
+            {% include 'AppFrontBundle:Default:messages.html.twig' %}
+            {% block base_content %}
+                <h1>Hello, world!</h1>
+
+            {% endblock %}
+        </div>
+        
+        {# include 'js/jquery.bxslider.min.js' when bxslider is needed       #}
+        {# include 'js/jquery.placeholder.js' when form use placeholder      #}
+        {# include 'js/magnific.popup.min.js' when you need another Lightbox  instead of the bootstrap one     #}
+        {% javascripts 
+            'js/jquery.js' 
+            'js/bootstrap.js'
+            'js/jquery.bxslider.min.js'
+            'js/jquery.placeholder.js'
+        %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+        {% javascripts 
+            'js/jquery.validation.messages.js'
+        %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <script>
+            {# Generate Symfony Route in javascript 
+             var route = Routing.generate('home'); #}
+                 
+            {# Validation for forms
+            http://jqueryvalidation.org/documentation/
+            $("form").validate();#}
+            
+            {# https://github.com/mathiasbynens/jquery-placeholder 
+            add placeholder for ie 8
+            $('input, textarea').placeholder();
+            #}
+                
+            {# Another Lightbox : Magnific Popup
+            http://dimsemenov.com/plugins/magnific-popup/
+            $('.lightbox').magnificPopup({type:inline);#}
+        </script>
+        {% block js_script %}
+
+        {% endblock %}
+        
+        <script>
+            $(document).ready(function(){
+                {% block js_doc_ready %}
+                        
+                {% endblock %}
+            });
+        </script>
+    </body>
