@@ -1,3 +1,7 @@
+nico_tool_box:
+    resource: "@NicoToolBoxBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app_front:
     resource: "@AppFrontBundle/Controller"
     prefix:   /

@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new \LiteCQRS\Plugin\SymfonyBundle\LiteCQRSBundle(),
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+            new Nico\ToolBoxBundle\NicoToolBoxBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

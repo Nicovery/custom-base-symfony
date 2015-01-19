@@ -1,0 +1,3 @@
+nico_tool_box_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: NicoToolBoxBundle:Default:index }
